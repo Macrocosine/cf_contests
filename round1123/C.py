@@ -1,0 +1,48 @@
+import sys
+
+from bisect import bisect_left, bisect_right, insort_left, insort_right
+from collections import Counter, defaultdict, deque
+from functools import cache, lru_cache
+from heapq import heapify, heappop, heappush, heapreplace
+from itertools import accumulate, combinations, permutations, product
+from math import ceil, floor, gcd, inf, isqrt, lcm, sqrt
+
+input = sys.stdin.readline
+write = sys.stdout.write
+
+sys.setrecursionlimit(1_000_000)
+
+
+def solve():
+    n,x=map(int,input().split())
+    a=list(map(int,input().split()))
+    cand=[]
+    for i in range(2,int(sqrt(x))+1):
+        if x%i==0:
+            cand.append(i)
+            while x%i==0:
+                x//=i
+    if x>1:
+        cand.append(x)
+    res=0
+    for x in cand:
+        tmp=0
+        for y in a:
+            if y%x==0:
+                tmp+=y
+        if tmp>res:
+            res=tmp
+    print(res)
+
+
+
+
+def main():
+    t = int(input())
+
+    for _ in range(t):
+        solve()
+
+
+if __name__ == "__main__":
+    main()
