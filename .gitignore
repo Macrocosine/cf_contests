@@ -17,3 +17,23 @@ ehthumbs_vista.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
 *.stackdump
+
+# Standalone C/C++ compilation outputs
+*.exe
+*.obj
+*.o
+a.out
+*.dSYM/
+
+# Python bytecode and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local Windows shortcuts
+*.lnk
+
+# VS Code Code Runner temporary files
+tempCodeRunnerFile
+tempCodeRunnerFile.*
