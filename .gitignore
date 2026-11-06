@@ -1,0 +1,19 @@
+# macOS metadata
+.DS_Store
+.localized
+.AppleDouble
+.LSOverride
+._*
+__MACOSX/
+.Spotlight-V100/
+.Trashes/
+.TemporaryItems/
+
+# Windows metadata
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.stackdump
